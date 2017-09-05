@@ -1,5 +1,5 @@
-void _medianfilter(const element* signal, element* result, int N, int Wsize)
-{
+void _medianfilter(const element* signal, element* result, int N, int Wsize){
+	
 	if (Wsize % 2 == 0)--Wsize;		//偶数的窗口大小不均匀
 	int halfWs = (Wsize - 1) / 2;	//一半窗口大小
 	for (int i = 0; i < N; ++i) {
